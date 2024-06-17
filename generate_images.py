@@ -18,7 +18,7 @@ with open('character_embeddings.pkl', 'rb') as f:
     character_embeddings = pickle.load(f)
 
 # Load the modified Stable Diffusion model
-model_id = "CompVis/stable-diffusion-v1-4"
+model_id = "runwayml/stable-diffusion-v1-5"
 pipeline = StableDiffusionPipeline.from_pretrained(model_id)
 pipeline.to("cuda")
 
